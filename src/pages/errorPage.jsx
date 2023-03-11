@@ -4,7 +4,7 @@ import { Container, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 const ErrorPage = () => {
-    const Navigate = useNavigate()
+  const Navigate = useNavigate();
   return (
     <Container>
       <img style={{ width: "100%", height: "80vh" }} src={errorPageImage}></img>
@@ -13,7 +13,7 @@ const ErrorPage = () => {
           variant="outline-primary"
           style={{ margin: "auto", width: "20rem", fontWeight: "bold" }}
           size="lg"
-          onClick={()=> Navigate("/")}
+          onClick={() => Navigate("/")}
         >
           <FontAwesomeIcon icon={faHome} /> Go Home
         </Button>

@@ -1,6 +1,4 @@
 const Into = () => {
-    return (
-        <div> Into </div>
-    )
-}
-export default Into
+  return <div className="animate__animated animate__fadeInRight"> Into </div>;
+};
+export default Into;

@@ -1,11 +1,11 @@
 body {
   font-family: "Prompt";
-  /* background: linear-gradient(
+  background: linear-gradient(
     109.6deg,
     rgb(20, 30, 48) 11.2%,
     rgb(36, 59, 85) 91.1%
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; */
+  background-position: center;
 }
