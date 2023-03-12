@@ -1,4 +1,3 @@
-import { Divider } from "@mui/material";
 import "../assets/css/cardBox.css";
 
 const CodeBlock = ({ element }) => {

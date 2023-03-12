@@ -4,18 +4,21 @@ import { faList } from "@fortawesome/free-solid-svg-icons";
 import { Container, Row, Col } from "react-bootstrap";
 import CardPlugin from "../components/CardPlugin";
 
+import pdfMake from "../assets/images/pdf-make-logo.png";
+import xlsxLogo from "../assets/images/xlsx-logo.png";
+
 const Home = () => {
   const listPlugin = [
     {
       id: 1,
       name: "PDFMake.js",
-      img: "../src/assets/images/pdf-make-logo.png",
+      img: pdfMake,
       link: "/pdfmake",
     },
     {
       id: 2,
       name: "XLSX.js",
-      img: "../src/assets/images/xlsx-logo.png",
+      img: xlsxLogo,
       link: "/xlsx",
     },
   ];
@@ -28,7 +31,7 @@ const Home = () => {
         </h6>
       </div>
       <div>
-        <p p style={{ textIndent: "1.5rem" }}>
+        <p style={{ textIndent: "1.5rem" }}>
           Plugin Tutorial เป็นคำที่ใช้เรียกวิธีการสร้างปลั๊กอิน (Plugin)
           หรือส่วนเสริมสำหรับโปรแกรมหรือแอปพลิเคชันต่างๆ
           ซึ่งสามารถเพิ่มฟังก์ชันหรือความสามารถพิเศษเข้าไปในโปรแกรมหรือแอปพลิเคชันนั้นๆ

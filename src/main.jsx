@@ -26,7 +26,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="into" element={<PDF_Into />} />
         <Route path="install" element={<PDF_Install />} />
       </Route>
-      <Route path="*" element={<ErrorPage />}></Route>
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
   </BrowserRouter>
 );
