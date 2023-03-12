@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 
 import PDF_Into from "./pages/PDFMake/PDF_Into";
+import PDF_Install from "./pages/PDFMake/PDF_Install";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/pdfmake" element={<LayoutPDFMake />}>
         <Route path="" element={<Navigate to="into" />} />
         <Route path="into" element={<PDF_Into />} />
+        <Route path="install" element={<PDF_Install />} />
       </Route>
       <Route path="*" element={<ErrorPage />}></Route>
     </Routes>

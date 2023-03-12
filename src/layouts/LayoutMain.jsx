@@ -5,7 +5,7 @@ const LayoutMain = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <Navbar bg="transparent" expand="lg">
+      <Navbar expand="lg" variant="dark">
         <Container>
           <Navbar.Brand
             style={{ cursor: "pointer" }}

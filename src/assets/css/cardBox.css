@@ -1,0 +1,32 @@
+.code-block {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.line-numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10px;
+  color: #999;
+}
+
+.line-number {
+  padding-right: 10px;
+  user-select: none;
+}
+
+pre {
+  margin: 0;
+  overflow-x: auto;
+}
+
+.line {
+  white-space: pre-wrap;
+}
+
+.line-function {
+  white-space: pre-wrap;
+  background-color: #f5f5f5;
+}

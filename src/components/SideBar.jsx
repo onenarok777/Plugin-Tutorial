@@ -1,14 +1,18 @@
 import { useState } from "react";
 import "../assets/css/sideBar.css";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 import { Navbar } from "react-bootstrap";
 
 const SideBar = ({ isMobile, listMenu }) => {
-  const location = useLocation().pathname.replace(listMenu.pathMain, "");
+  const navigate = useNavigate();
+  const location = useLocation().pathname.replace(listMenu.pathMain + "/", "");
   const [showMenu, setShowMenu] = useState(true);
 
   return (
@@ -27,11 +31,13 @@ const SideBar = ({ isMobile, listMenu }) => {
             <Navbar.Brand style={{ color: "#3645ef" }}>
               {listMenu.title}
             </Navbar.Brand>
-            <div className="button-side-off">
+            <div
+              className="button-side-off"
+              onClick={() => setShowMenu(!showMenu)}
+            >
               <FontAwesomeIcon
                 style={{ color: "#3645ef" }}
                 icon={showMenu ? faChevronLeft : faChevronRight}
-                onClick={() => setShowMenu(!showMenu)}
               />
             </div>
           </Navbar>
@@ -45,6 +51,7 @@ const SideBar = ({ isMobile, listMenu }) => {
               className={
                 mpMenu.path == location ? "menu-active menu-list" : "menu-list"
               }
+              onClick={() => navigate(mpMenu.path)}
             >
               {mpMenu.name}
             </div>
